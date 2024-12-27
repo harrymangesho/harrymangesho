@@ -3,22 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+    <title>Donate Now - Charity to the poorest of the poorest</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <h1>Welcome to My Simple Website</h1>
+        <div class="container">
+            <h1>Charity Donation</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <section>
-        <p>This is a simple website built with HTML, CSS, and JavaScript.</p>
+
+    <!-- Main Section with Donation Form -->
+    <section class="donation-section">
+        <div class="container">
+            <h2>Your donation can make a difference</h2>
+            <p>Choose the amount you want to donate:</p>
+
+            <!-- Donation Form -->
+            <form action="thankyou.html" method="GET">
+                <div class="donation-amounts">
+                    <label>
+                        <input type="radio" name="amount" value="10">
+                        $10
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="25">
+                        $25
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="50">
+                        $50
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="100">
+                        $1000
+                    </label>
+                    <label>
+                        <input type="radio" name="amount" value="other">
+                        Other Amount: $<input type="number" name="other_amount" placeholder="Enter Amount">
+                    </label>
+                </div>
+
+                <button type="submit" class="donate-button">Donate Now</button>
+            </form>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>Harry Mangesho</p>
+        <div class="container">
+            <p>&copy; 2024 Charity Organization. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script> <!-- Link to the JavaScript file (optional) -->
+    <script src="script.js"></script>
 </body>
 </html>
